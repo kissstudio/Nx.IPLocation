@@ -1,0 +1,6 @@
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\bin\Debug\Nx.IPLocation.dll
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\bin\Debug\Nx.IPLocation.pdb
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\obj\Debug\Nx.IPLocation.dll
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\obj\Debug\Nx.IPLocation.pdb
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\obj\Debug\Nx.IPLocation.Properties.Resources.resources
+c:\users\love\documents\visual studio 2015\Projects\Nx.IPLocation\Nx.IPLocation\obj\Debug\Nx.IPLocation.csproj.GenerateResource.Cache
