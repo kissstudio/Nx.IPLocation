@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Nx.IPLocation
+namespace Sunshine.IPLocation
 {
     public class QQWry
     {
