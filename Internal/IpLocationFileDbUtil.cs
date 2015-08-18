@@ -18,7 +18,7 @@ namespace Nx.IPLocation
     internal class IPScanner
     {
         
-        private byte[] data = Nx.IPLocation.Properties.Resources.qqwry;
+        private byte[] data = Sunshine.Properties.Resources.qqwry;
         Regex regex = new Regex(@"(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))");
         long firstStartIpOffset;
         long lastStartIpOffset;
