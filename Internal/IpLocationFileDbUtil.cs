@@ -6,7 +6,7 @@ using System.Net;
 using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-
+using Sunshine.Internal;
 namespace Sunshine.IPLocation
 {
     public class IpLocation
@@ -15,10 +15,27 @@ namespace Sunshine.IPLocation
         public string Country { get; set; }
         public string Local { get; set; }
     }
+
     internal class IPScanner
     {
-        
-        private byte[] data = Sunshine.Properties.Resources.qqwry;
+        static IPScanner()
+        {
+            byte[] data = Sunshine.Properties.Resources.sipl;
+            //var msOut = new MemoryStream();
+            //var zos = new ICSharpCode.SharpZipLib.GZip.GZipOutputStream(msOut);
+            //zos.SetLevel(9);
+            //zos.Write(data, 0, data.Length);
+            //zos.Flush();
+            //zos.Close();
+            //var compressed = msOut.ToArray(); //bzip2=5685146 gzip=4832396
+            //File.WriteAllBytes(@"C:\Users\love\Desktop\sipl.bin", compressed);
+            ICSharpCode.SharpZipLib.GZip.GZipInputStream zis = new ICSharpCode.SharpZipLib.GZip.GZipInputStream(new MemoryStream(data));
+            var raw = zis.ToMemorySteam();
+            IPScanner.data = raw.ToArray();
+            raw.Dispose();
+        }
+        private static byte[] data;
+
         Regex regex = new Regex(@"(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))");
         long firstStartIpOffset;
         long lastStartIpOffset;
