@@ -63,16 +63,6 @@ namespace Sunshine.Properties {
         /// <summary>
         ///   查找 System.Byte[] 类型的本地化资源。
         /// </summary>
-        internal static byte[] qqwry {
-            get {
-                object obj = ResourceManager.GetObject("qqwry", resourceCulture);
-                return ((byte[])(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   查找 System.Byte[] 类型的本地化资源。
-        /// </summary>
         internal static byte[] sipl {
             get {
                 object obj = ResourceManager.GetObject("sipl", resourceCulture);
